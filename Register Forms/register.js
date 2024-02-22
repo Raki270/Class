@@ -4,6 +4,8 @@ let modalTitle = document.getElementById("exampleModalLabel");
 let modalBody = document.getElementsByClassName("modal-body")[0];
 
 register.addEventListener("click", () => {
+  modalBody.innerHTML = ``;
+  modalTitle.innerText = ``;
   modalTitle.innerText = "Register";
   modalBody.innerHTML = createRegisterForm();
   let submitBtn = document.getElementById("submitBtn");
@@ -86,8 +88,8 @@ function postForm() {
   let password = document.getElementById("password").value;
 
   const user = {
-    firstName: firstname,
-    lastName: lastname,
+    firstname: firstname,
+    lastname: lastname,
     city: city,
     email: email,
     job: job,
