@@ -36,6 +36,7 @@ form {
 .img-drinks {
     width: 150px;
     height: 150px;
+    object-fit: contain;
 }
 
 .dis-flex_justcont-cent {
